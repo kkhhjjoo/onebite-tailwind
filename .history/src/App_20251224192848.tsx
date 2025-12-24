@@ -1,0 +1,12 @@
+import "./App.css";
+
+function App() {
+  return (
+    <div>
+      {/* 1. 타이포그래프 */}
+      <div className="text-xs">text-xs</div>
+    </div>
+  );
+}
+
+export default App;
