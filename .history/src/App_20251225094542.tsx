@@ -34,13 +34,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import { AlertDialogTrigger } from "@radix-ui/react-alert-dialog";
-import { BicepsFlexed } from "lucide-react";
+import {biceps-flexed} from "lucide-react";
 
 function App() {
   const isActive = false;
   return (
     <div className="p-5">
-      <BicepsFlexed className="h-10 w-10 fill-yellow-500" />
       <AlertDialog>
         <AlertDialogTrigger>Open Alert Dialog</AlertDialogTrigger>
         <AlertDialogContent>

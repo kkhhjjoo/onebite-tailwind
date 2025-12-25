@@ -3,7 +3,6 @@ import {
   AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
-  AlertDialogDescription,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
 import "./App.css";
@@ -34,19 +33,15 @@ import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import { AlertDialogTrigger } from "@radix-ui/react-alert-dialog";
-import { BicepsFlexed } from "lucide-react";
 
 function App() {
   const isActive = false;
   return (
     <div className="p-5">
-      <BicepsFlexed className="h-10 w-10 fill-yellow-500" />
       <AlertDialog>
         <AlertDialogTrigger>Open Alert Dialog</AlertDialogTrigger>
         <AlertDialogContent>
           <AlertDialogTitle>Title</AlertDialogTitle>
-          <AlertDialogDescription>Description</AlertDialogDescription>{" "}
-          {/* AlertDialogDescription도 써줘야 함 */}
           <div>body</div>
           <div>
             <AlertDialogAction
@@ -56,13 +51,7 @@ function App() {
             >
               Action
             </AlertDialogAction>
-            <AlertDialogCancel
-              onClick={() => {
-                console.log("Cancel");
-              }}
-            >
-              Cancel
-            </AlertDialogCancel>
+            <AlertDialogCancel>Cancel</AlertDialogCancel>
           </div>
         </AlertDialogContent>
       </AlertDialog>

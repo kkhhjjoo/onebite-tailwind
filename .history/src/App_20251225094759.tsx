@@ -40,7 +40,7 @@ function App() {
   const isActive = false;
   return (
     <div className="p-5">
-      <BicepsFlexed className="h-10 w-10 fill-yellow-500" />
+      <BicepsFlexed />
       <AlertDialog>
         <AlertDialogTrigger>Open Alert Dialog</AlertDialogTrigger>
         <AlertDialogContent>
